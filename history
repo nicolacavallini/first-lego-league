@@ -1,0 +1,76 @@
+    1  cd /media/fenix/VBox_GAs_6.1.34/
+    2  bash autorun.sh 
+    3  ls -l 
+    4  ./VBoxLinuxAdditions.run 
+    5  sudo ./VBoxLinuxAdditions.run 
+    6  §
+    7  python
+    8  python3
+    9  python
+   10  pwd
+   11  mkdir local
+   12  cd local/
+   13  mkdir src
+   14  mkdir nao code
+   15  ls -l 
+   16  rm -rf nao/
+   17  rm -rf code/
+   18  mkdir nao-code
+   19  cd nao-code/
+   20  vim 
+   21  atom .
+   22  ls 
+   23  touch ex00.py
+   24  ls ..
+   25  cd ..
+   26  cd src/
+   27  ls -l *.py
+   28  cd pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/
+   29  cd lib/
+   30  ls -l *.py
+   31  ls -l 
+   32  cd ..
+   33  pwd
+   34  cd ..
+   35  cd Downloads/
+   36  ls -l 
+   37  mv pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148.tar.gz ../local/src/
+   38  cd ../local/src/
+   39  tar xzvf pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148.tar.gz 
+   40  cd ../../Downloads/
+   41  sudo dpkg -i atom-amd64.deb 
+   42  atom 
+   43  bash Anaconda3-2021.11-Linux-x86_64.sh 
+   44  ls -a
+   45  la -l anaconda3/
+   46  conda env list
+   47  vim 
+   48  sudo apt install vim
+   49  apt --fix-broken install
+   50  ls -la
+   51  vi .bashrc 
+   52  source .bashrc 
+   53  rm -rf anaconda3/
+   54  cd Downloads/
+   55  bash Anaconda3-2021.11-Linux-x86_64.sh 
+   56  conda create -n py27 python=2.7 anaconda
+   57  conda create -y -n py27 python=2.7
+   58  conda activate py27
+   59  /home/fenix/local/src/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/lib/python2.7/site-packages/
+   60  ls /home/fenix/local/src/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/lib/python2.7/site-packages/
+   61  export PYTHONPATH=/home/fenix/local/src/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/lib/python2.7/site-packages/
+   62  export QI_SDK_PREFIX=/home/fenix/local/src/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/
+   63  cd local/nao-code/
+   64  python ex00.py 
+   65  cd local/src/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/
+   66  pwd
+   67  conda activate py27
+   68  pip install pyqt5
+   69  conda install -c anaconda pyqt
+   70  history | grep export
+   71  export PYTHONPATH=/home/fenix/local/src/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/lib/python2.7/site-packages/
+   72  cd local/nao-code/
+   73  touch ex01.py
+   74  atom .
+   75  python ex01.py 
+   76  history
